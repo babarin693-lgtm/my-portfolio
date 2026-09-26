@@ -36,6 +36,18 @@
   header.hero h1{font-size:clamp(2.2rem,7vw,3rem);color:#fff;}
   header.hero .tagline{margin-top:1.1rem;font-size:clamp(1rem,2.4vw,1.15rem);color:#fff;font-weight:500;max-width:30rem;}
   header.hero .scope{margin-top:1rem;font-size:.9rem;color:var(--navy-tint);}
+  header.hero .can-do{
+    margin-top:1.6rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);
+    border-radius:4px;padding:1rem 1.2rem;font-size:.88rem;color:#fff;max-width:32rem;
+  }
+  header.hero .can-do b{font-weight:700;}
+
+  nav.subnav{
+    position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--line);
+  }
+  nav.subnav .wrap{display:flex;gap:1.6rem;padding:.9rem clamp(1.25rem,4vw,2rem);}
+  nav.subnav a{font-size:.85rem;font-weight:700;color:var(--muted);text-decoration:none;}
+  nav.subnav a:hover{color:var(--navy);}
 
   section{padding:clamp(2.75rem,7vw,4rem) 0;border-bottom:1px solid var(--line);}
   section:last-of-type{border-bottom:none;}
@@ -90,8 +102,17 @@
     <h1>バンバジー</h1>
     <p class="tagline">段取りと、周囲への気配りを土台に。ライティングとコンテンツ制作で、丁寧なものづくりをお手伝いします。</p>
     <p class="scope">接客 / 調理補助 / 介護 / 食品工場 — さまざまな現場で培った力を、言葉とコンテンツ制作に活かしています。</p>
+    <div class="can-do"><b>対応可能なこと:</b> 体験談・エッセイ記事の執筆、生活・現場のリアルを伝える文章、生成AIを活用したコンテンツ制作(画像・簡易マンガ等)</div>
   </div>
 </header>
+
+<nav class="subnav">
+  <div class="wrap">
+    <a href="#about">自己紹介</a>
+    <a href="#works">作品</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</nav>
 
 <main>
 
@@ -148,28 +169,28 @@
       <h2>制作サンプル</h2>
 
       <div class="work-card">
-        <span class="w-tag">WRITING</span>
+        <span class="w-tag">WRITING ― 公開記事</span>
         <h3>体験記事(note)</h3>
         <p>架空の発注をもとに、事実を踏まえて執筆した体験記事です。読み手に伝わりやすい構成・言葉選びを意識しました。</p>
         <a class="w-link" href="https://note.com/glad_squid3192/n/n241d469ca707" target="_blank" rel="noopener">記事を読む →</a>
       </div>
 
       <div class="work-card">
-        <span class="w-tag">AI CONTENT</span>
+        <span class="w-tag">AI CONTENT ― 制作サンプル</span>
         <h3>生成AIを活用した営業マンガ制作</h3>
-        <p>ある技術の仕組みをわかりやすく伝えるための営業マンガを、企画から仕上げまで一人で制作しました。資料整理・プロット作成・コマ割り・AIによる作画・確認と修正まで、一連の流れを自分で組み立てて進めています(掲載しているのは提案用の制作サンプルで、案件としての受注実績ではありません)。</p>
+        <p>ある技術の仕組みをわかりやすく伝えるための営業マンガを、企画から仕上げまで一人で制作しました。資料整理・プロット作成・コマ割り・AIによる作画・確認と修正まで、一連の流れを自分で組み立てて進めています(提案用に制作したサンプルで、案件としての受注実績ではありません)。</p>
         <p class="w-note">※ 技術的な内容はクライアント由来の情報を含むため、具体的な詳細は伏せています。</p>
       </div>
 
       <div class="work-card">
-        <span class="w-tag">AI ILLUSTRATION</span>
+        <span class="w-tag">AI ILLUSTRATION ― 制作サンプル</span>
         <h3>オリジナル世界観設定資料</h3>
         <p>生成AIを使い、架空世界の勢力図と設定をビジュアル化したサンプルです。文章設定を、ひと目で伝わる一枚絵にまとめました。</p>
         <img src="images/world-map-sample.jpeg" alt="生成AIで作成したオリジナル世界観の勢力図サンプル">
       </div>
 
       <div class="work-card">
-        <span class="w-tag">STORYBOARD</span>
+        <span class="w-tag">STORYBOARD ― 制作サンプル</span>
         <h3>AI画像による絵コンテサンプル</h3>
         <p>ストーリーの流れをカットごとに整理し、生成AI画像とあわせて絵コンテの形にまとめたサンプルです。カメラワークやセリフ、演出メモまで構成しています。</p>
         <img src="images/storyboard-sample.png" alt="生成AI画像を使った絵コンテサンプル">
